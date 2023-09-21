@@ -2,6 +2,9 @@ package contactBook;
 
 import contactBook.Contact;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class ContactBook {
     static final int DEFAULT_SIZE = 100;
 
@@ -58,6 +61,14 @@ public class ContactBook {
     //Pre: name != null && hasContact(name)
     public void setEmail(String name, String email) {
         contacts[searchIndex(name)].setEmail(email);
+    }
+
+    public boolean hasEqualPhone() {
+        Set<Integer> phones = new HashSet<>();
+        for (int i = 0; i < counter; i++) {
+            phones.add(contacts[i].getPhone());
+        }
+        return phones.size() != counter;
     }
 
     private int searchIndex(String name) {
