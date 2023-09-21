@@ -93,4 +93,12 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
+    public String getByNumber(int number){
+        for(int i=0;i<counter;i++){
+            if(number==contacts[i].getPhone()){
+                return contacts[i].getName();
+            }
+        }
+        return "";
+    }
 }
