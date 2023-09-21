@@ -1,5 +1,5 @@
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
+import static org.testng.AssertJUnit.assertEquals;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -30,7 +30,8 @@ public class Tests {
      * 1_in_base.txt é 1_out_base.txt . Não tem de fazer mais nada no resto da classe.
      * Basta configurar esta sequência de testes!
      */
-    @Test public void test1() { test("1_in_base.txt","1_out_base.txt"); }
+    @Test
+    public void test1() { test("1_in_base.txt","1_out_base.txt"); }
     @Test public void test2() { test("2_in_base_GN.txt","2_out_base_GN.txt"); }
     @Test public void test3() { test("3_in_base_EP.txt","3_out_base_EP.txt"); }
 
