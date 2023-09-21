@@ -4,3 +4,4 @@ Fork this project to make your own version of it.
 
 # Group Members
 - Anónio Festas (63739)
+- Miguel Marques (59310)
