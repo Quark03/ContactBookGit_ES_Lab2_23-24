@@ -1,8 +1,6 @@
 import contactBook.Contact;
 import contactBook.ContactBook;
-
 import java.util.Scanner;
-
 
 public class Main {
     //Constantes que definem os comandos
@@ -13,9 +11,9 @@ public class Main {
     public static final String SET_PHONE      = "SP";
     public static final String SET_EMAIL      = "SE";
     public static final String LIST_CONTACTS  = "LC";
-    public static final String EXISTS_PHONE = "EP";
+    public static final String EXISTS_PHONE   = "EP";
     public static final String QUIT           = "Q";
-    public static final String GET_BY_NUMBER="GN";
+    public static final String GET_BY_NUMBER  = "GN";
 
     //Constantes que definem as mensagens para o utilizador
     public static final String CONTACT_EXISTS = "contactBook.Contact already exists.";
